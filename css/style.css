@@ -74,7 +74,7 @@ p {
 }
 
 #hero {
-  background: url("../image/tuk.jpg") no-repeat center center/cover;
+  background: url("./image/tuk.jpg") no-repeat center center/cover;
   height: 600px;
 }
 
