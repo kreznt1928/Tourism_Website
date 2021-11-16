@@ -23,6 +23,10 @@ h3 {
   padding-bottom: 20px;
 }
 
+#navbar h1 {
+  padding-right: 450px;
+}
+
 .container {
   margin: auto;
   max-width: 1100px;
@@ -37,8 +41,9 @@ p {
 /* navigation */
 #navbar {
   background: #fff;
-  overflow: auto;
+  overflow: hidden;
   color: black;
+  height: 50px;
 }
 
 #navbar a {
@@ -47,16 +52,17 @@ p {
 
 #navbar ul {
   list-style: none;
-  float: right;
+  float: left;
 }
 
 #navbar ul li {
   float: left;
 }
 
-#navbar ul li a {
+#navbar a {
   display: block;
   padding: 20px;
+  float: left;
 }
 
 #navbar h1 {
@@ -73,18 +79,18 @@ p {
   background: rgba(77, 77, 77, 0.1);
 }
 
-#hero {
+#home {
   background: url("../image/tuk.jpg") no-repeat center center/cover;
   height: 600px;
 }
 
-#hero .hero-content {
+#home .home-content {
   color: #fff;
   text-align: center;
   padding-top: 170px;
 }
 
-#hero .hero-content h1 {
+#home .home-content h1 {
   font-size: 150px;
   line-height: 1.2em;
 }
@@ -93,7 +99,7 @@ p {
   color: #f0f0cb;
 }
 
-#hero .hero-content p {
+#home .home-content p {
   padding-bottom: 60px;
   line-height: 1.7em;
 }
@@ -134,6 +140,12 @@ p {
   display: block;
   align-content: center;
 }
+#about-1 {
+  height: 450px;
+  display: block;
+  align-content: center;
+}
+
 #about p {
   line-height: 2em;
   font-size: 15px;
@@ -144,10 +156,10 @@ p {
 #about i {
   margin-bottom: 10px;
 }
-#about .content-1,
-#about .content-2,
-#about .content-3,
-#about .content-4 {
+#about-1 .content-1,
+#about-1 .content-2,
+#about-1 .content-3,
+#about-1 .content-4 {
   float: left;
   overflow: hidden;
   text-align: center;
@@ -272,7 +284,7 @@ p {
 footer {
   padding-top: 10px;
   background: #082032;
-  height: 70px;
+  height: 100px;
   overflow: auto;
 }
 footer p {
@@ -313,6 +325,10 @@ footer p {
   padding-top: 60px;
 }
 
+#navbar .icon {
+  display: none;
+}
+
 .card-title {
   text-align: left;
   font-size: 30px;
@@ -320,3 +336,30 @@ footer p {
   padding-left: 20px;
   color: #fff;
 }
+
+#contacts {
+  background: #333;
+  height: 300px;
+}
+
+#contacts .heading {
+  color: white;
+}
+
+#contacts .card {
+  float: left;
+  overflow: hidden;
+  text-align: center;
+  padding-top: 20px;
+  align-items: center;
+  width: 31%;
+}
+
+h4 {
+  font-size: 40px;
+}
+
+i {
+  font-size: 40px;
+}
+

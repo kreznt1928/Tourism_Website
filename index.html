@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/media.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
@@ -13,24 +14,23 @@
   </head>
   <body>
     <header>
-      <nav id="navbar">
+      <nav class="navbar" id="navbar">
         <div class="container">
           <h1>La Union</h1>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#heading">Destinations</a></li>
-            <li><a href="#tour-packages">Tours</a></li>
-            <li><a href="#activities">Activities</a></li>
-            <li><a href="#">Promotions</a></li>
-            <li><a href="#">Blogs</a></li>
-            <li><a href="#">Contacts</a></li>
-          </ul>
+            <a href="#home">Home</a>
+            <a href="#destinations">Destinations</a>
+            <a href="#tour-packages">Tours</a>
+            <a href="#activities">Activities</a>
+            <a href="#contacts">Contacts</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
         </div>
       </nav>
 
       <div class="content">
-      <section id="hero">
-        <div class="hero-content">
+      <section id="home">
+        <div class="home-content">
           <h1>LA UNION</h1>
           <p class="text-lead container">
             <strong>Unforgettable Journey</strong>
@@ -39,7 +39,7 @@
       </section>
     </header>
 
-    <section id="heading">
+    <section id="destinations">
       <div class="heading">
         <h2>Top Destinations in La Union</h2>
         <p class="text-lead">
@@ -48,7 +48,7 @@
       </div>
     </section>
 
-    <section id="about">
+    <section id="about-1">
       <div class="container">
         <div class="content-1"></div>
         <div class="content-2"></div>
@@ -68,8 +68,7 @@
           </p>
         </div>
         <div class="container">
-          <div class="tour-1">
-          </div>
+          <div class="tour-1"></div>
           <div class="tour-2"></div>
           <div class="tour-3"></div>
         </div>
@@ -112,10 +111,33 @@
           <div class="card-title">Outdoor Adventure</div></div>
       </div>
     </section>
+
+    <section id="contacts">
+      <div class="heading">
+        <h4>GET IN TOUCH</h4>
+        <div class="container">
+          <div class="card">
+            <p><strong>LOCATION</strong></p>
+          <p>City Hall, F.I. Ortega Highway, Barangay I, City of San Fernando, 2500 La Union</p></div>
+          <div class="card">
+            <p><strong>CONTACT US</strong></p>
+            <p>Phone : (072) 687-8100</p>
+            <p>Email : csflaunion98@gmail.com</p>
+          </div>
+          <div class="card">
+            <p><strong>FOLLOW US</strong></p>
+            <p><i class="fab fa-facebook-square"></i>
+            <i class="fab fa-twitter-square"></i>
+            <i class="fab fa-instagram-square"></i></p>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 
     <footer>
       <div class="container">
+        <p>Developed by Kreznt Software Solutions</p>
         <p>&copy; Copyright Batch 4 Creative Web Design 2021</p>
       </div>
     </footer>
@@ -135,5 +157,16 @@
         }
       }
       </script>
+
+      <script>
+        function myFunction() {
+          var x = document.getElementById("navbar");
+          if (x.className === "navbar") {
+            x.className += " responsive";
+          } else {
+            x.className = "navbar";
+          }
+        }
+        </script>
   </body>
 </html>
