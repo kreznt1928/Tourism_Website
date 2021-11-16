@@ -312,3 +312,11 @@ footer p {
 .sticky + .content {
   padding-top: 60px;
 }
+
+.card-title {
+  text-align: left;
+  font-size: 30px;
+  padding-top: 100px;
+  padding-left: 20px;
+  color: #fff;
+}
