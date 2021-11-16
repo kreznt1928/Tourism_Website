@@ -278,3 +278,20 @@ footer p {
   text-align: center;
   color: #fff;
 }
+
+#about .card {
+    float: left;
+  overflow: hidden;
+  text-align: center;
+  padding-top: 20px;
+  align-items: center;
+}
+
+.card {
+  background-size: cover;
+  width: 23%;
+  height: 177px;
+  border-radius: 30px;
+  margin: 0 10px;
+}
+
