@@ -17,7 +17,7 @@
         <div class="container">
           <h1>La Union</h1>
           <ul>
-            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="#heading">Destinations</a></li>
             <li><a href="#tour-packages">Tours</a></li>
             <li><a href="#activities">Activities</a></li>
@@ -28,6 +28,7 @@
         </div>
       </nav>
 
+      <div class="content">
       <section id="hero">
         <div class="hero-content">
           <h1>LA UNION</h1>
@@ -55,7 +56,8 @@
         <div class="content-4"></div>
       </div>
     </section>
-
+    </div>
+    
     <!-- section#tourpackages -->
     <section id="tour-packages">
       <div class="row">
@@ -73,10 +75,7 @@
         </div>
       </div>
 
-      <div class="row">
-        <div class="content-2"></div>
-        <div class="content-3"></div>
-      </div>
+     
     </section>
     <!-- end of section tour packages -->
 
@@ -96,13 +95,37 @@
         <div class="card" style="background: url('./image/white-sands.jpg'); background-size: cover;"></div>
         <div class="card" style="background: url('./image/family-fun.jpg'); background-size: cover;"></div>
         <div class="card" style="background: url('./image/old-colonial-towns.jpg'); background-size: cover;"></div>
+        </div>
+        <br>
+        <div class="container">
+        <div class="card" style="background: url('./image/romantic-getaway.jpg'); background-size: cover;"></div>
+        <div class="card" style="background: url('./image/snorkeling1.jpg'); background-size: cover;"></div>
+        <div class="card" style="background: url('./image/beautifuk-scenery.jpg'); background-size: cover;"></div>
+        <div class="card" style="background: url('./image/outdoor-adventure.jpg'); background-size: cover;"></div>
       </div>
     </section>
+  </div>
 
     <footer>
       <div class="container">
         <p>&copy; Copyright Batch 4 Creative Web Design 2021</p>
       </div>
     </footer>
+
+
+    <script>
+      window.onscroll = function() {myFunction()};
+      
+      var navbar = document.getElementById("navbar");
+      var sticky = navbar.offsetTop;
+      
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky")
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      }
+      </script>
   </body>
 </html>

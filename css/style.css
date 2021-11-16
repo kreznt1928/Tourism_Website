@@ -105,8 +105,8 @@ p {
 .heading {
   display: block;
   margin-top: 50px;
-  padding-top: 40px;
-  padding-bottom: 20px;
+  padding-top: 80px;
+  padding-bottom: 40px;
   text-align: center;
   overflow: hidden;
 }
@@ -130,7 +130,7 @@ p {
 }
 
 #about {
-  height: 400px;
+  height: 450px;
   display: block;
   align-content: center;
 }
@@ -153,6 +153,7 @@ p {
   text-align: center;
   padding-top: 20px;
   align-items: center;
+  padding-bottom: 20px;
 }
 
 .content-1 {
@@ -207,7 +208,7 @@ p {
   width: 32%;
   height: 350px;
   border-radius: 30px;
-  margin: 0 2px;
+  margin: 0 4px;
 }
 
 .tour-2 {
@@ -216,7 +217,7 @@ p {
   width: 32%;
   height: 350px;
   border-radius: 30px;
-  margin: 0 2px;
+  margin: 0 4px;
 }
 
 .tour-3 {
@@ -225,7 +226,7 @@ p {
   width: 32%;
   height: 350px;
   border-radius: 30px;
-  margin: 0 2px;
+  margin: 0 4px;
 }
 
 #about a.c-btn {
@@ -240,7 +241,7 @@ p {
   background: url("../image/beautifuk-scenery.jpg");
   background-position: center;
   background-size: cover;
-  height: 600px;
+  height: 700px;
   overflow: hidden;
 }
 
@@ -251,7 +252,7 @@ p {
 .row {
   background: rgba(39, 62, 84, 0.4);
   overflow: hidden;
-  height: 600px;
+  height: 700px;
   z-index: 2;
 }
 #tour-packages .lead-head {
@@ -280,7 +281,7 @@ footer p {
 }
 
 #about .card {
-    float: left;
+  float: left;
   overflow: hidden;
   text-align: center;
   padding-top: 20px;
@@ -295,3 +296,19 @@ footer p {
   margin: 0 10px;
 }
 
+/* Page content */
+.content {
+  padding-top: 20px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
