@@ -14,7 +14,7 @@
   </head>
   <body>
     <header>
-      <nav class="navbar" id="navbar">
+      <nav class="navbar" id="mynavbar">
         <div class="container">
           <h1>La Union</h1>
             <a href="#home">Home</a>
@@ -23,7 +23,7 @@
             <a href="#activities">Activities</a>
             <a href="#contacts">Contacts</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-              <i class="fa fa-bars"></i>
+              <i class="fas fa-bars"></i>
             </a>
         </div>
       </nav>
@@ -142,25 +142,9 @@
       </div>
     </footer>
 
-
-    <script>
-      window.onscroll = function() {myFunction()};
-      
-      var navbar = document.getElementById("navbar");
-      var sticky = navbar.offsetTop;
-      
-      function myFunction() {
-        if (window.pageYOffset >= sticky) {
-          navbar.classList.add("sticky")
-        } else {
-          navbar.classList.remove("sticky");
-        }
-      }
-      </script>
-
       <script>
         function myFunction() {
-          var x = document.getElementById("navbar");
+          var x = document.getElementById("mynavbar");
           if (x.className === "navbar") {
             x.className += " responsive";
           } else {

@@ -23,7 +23,7 @@ h3 {
   padding-bottom: 20px;
 }
 
-#navbar h1 {
+.navbar h1 {
   padding-right: 450px;
 }
 
@@ -39,44 +39,32 @@ p {
 }
 
 /* navigation */
-#navbar {
+.navbar {
   background: #fff;
   overflow: hidden;
   color: black;
   height: 50px;
 }
 
-#navbar a {
+.navbar a {
   color: black;
 }
 
-#navbar ul {
-  list-style: none;
-  float: left;
-}
-
-#navbar ul li {
-  float: left;
-}
-
-#navbar a {
+.navbar a {
   display: block;
   padding: 20px;
   float: left;
 }
 
-#navbar h1 {
+.navbar h1 {
   float: left;
   padding-top: 20px;
 }
 
-#navbar ul li a:hover {
-  background: #b9b9b9;
+.navbar a:hover {
   color: blue;
-}
-
-#navbar ul li a.active {
-  background: rgba(77, 77, 77, 0.1);
+  font-style: italic;
+  font-weight: bold;
 }
 
 #home {
@@ -323,10 +311,6 @@ footer p {
 /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
 .sticky + .content {
   padding-top: 60px;
-}
-
-#navbar .icon {
-  display: none;
 }
 
 .card-title {

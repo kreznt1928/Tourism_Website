@@ -10,8 +10,8 @@
         line-height: 1.2em;
       }
 
-      #navbar h1 {
-        padding-right: 300px;
+      .navbar h1 {
+        padding-right: 200px;
       }
 
       .heading {
@@ -102,7 +102,7 @@
   
   @media screen and (max-width: 600px) {
     .navbar.responsive {
-        position: relative;
+        position: fixed;
     }
     .navbar.responsive .icon {
       right: 0;
