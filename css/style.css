@@ -296,11 +296,6 @@ footer p {
   margin: 0 10px;
 }
 
-/* Page content */
-.content {
-  padding-top: 20px;
-}
-
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
 .sticky {
   position: fixed;
